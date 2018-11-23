@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a10767.electronic_wardrobe">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login_Register.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 活动注册 -->
+        <activity android:name=".Login_Register.Register" />
+        <activity android:name=".Main_Fragment.MyselfMine" />
+        <activity android:name=".Fix_Message.ForgetPassword" />
+        <activity android:name=".Fix_Message.ChangePassword" />
+        <activity android:name=".Main_Fragment.TheMain" />
+        <activity android:name=".Fix_Message.MyselfGender" />
+        <activity android:name=".Fix_Message.MyselfUsername" />
+        <activity android:name=".Fix_Message.FixPassword" />
+        <activity android:name=".Fix_Message.FixPhone" />
+        <activity android:name=".Clothes_Message.Clothe_Jacket" />
+        <activity android:name=".Clothes_Message.Clothe_Skirt" />
+        <activity android:name=".Clothes_Message.Clothe_Pants" />
+        <activity android:name=".Clothes_Message.Clothe_Shoe" />
+        <activity android:name=".Clothes_Message.Clothe_Suit" />
+        <activity android:name=".Clothes_Message.Clothe_Bag" />
+        <activity android:name=".Clothes_Message.Clothe_Coat" />
+        <activity android:name=".Clothes_Message.Clothe_Cap" />
+        <activity android:name=".Clothes_Message.Clothe_Accessories" />
+        <activity android:name=".Clothes_Manage.Jacket_Add" />
+        <activity android:name=".Clothes_Manage.Skirt_Add" />
+        <activity android:name=".Clothes_Manage.Suit_Add" />
+        <activity android:name=".Clothes_Manage.Pants_Add" />
+        <activity android:name=".Clothes_Manage.Shoe_Add" />
+        <activity android:name=".Clothes_Manage.Bag_Add" />
+        <activity android:name=".Clothes_Manage.Coat_Add" />
+        <activity android:name=".Clothes_Manage.Cap_Add" />
+        <activity android:name=".Clothes_Manage.Accessories_Add" />
+        <activity android:name=".Clothes_Manage.Clothes_Delete" />
+        <activity android:name=".Clothes_Manage.Clothes_Check" />
+        <activity android:name=".Clothes_Manage.Clothes_Fix" />
+        <activity android:name=".Clothes_Manage.Clothes_Search" />
+        <activity android:name=".Mix_Manage.Clothe_Mix" />
+        <activity android:name=".Mix_Manage.Frame_All" />
+        <activity android:name=".Mix_Manage.Wardrobe_choice" />
+        <activity android:name=".Mix_Manage.Mix_Jacket" />
+        <activity android:name=".Mix_Manage.Mix_Add" />
+        <activity android:name=".Mix_Manage.My_Mix" />
+        <activity android:name=".Others_Wardrobe.OthersWardrobe" />
+        <activity android:name=".Others_Wardrobe.Others_Add" />
+        <activity android:name=".Mix_Manage.Mix_Pants" />
+        <activity android:name=".Mix_Manage.Mix_Skirt" />
+        <activity android:name=".Mix_Manage.Mix_Shoe" />
+        <activity android:name=".Mix_Manage.Mix_Suit" />
+        <activity android:name=".Mix_Manage.Mix_Coat" />
+        <!-- 内容提供器的注册 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="myself_mine_head_portrait"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Mix_Manage.Mix_Cap" />
+        <activity android:name=".Others_Wardrobe.Others_Wardrobe_Choice" />
+        <activity android:name=".Others_Wardrobe.Main2Activity" />
+        <activity android:name=".Others_Wardrobe.Others_Jacket" />
+        <activity android:name=".Others_Wardrobe.Others_Skirt" />
+        <activity android:name=".Others_Wardrobe.Others_Pants" />
+        <activity android:name=".Others_Wardrobe.Others_Shoe" />
+        <activity android:name=".Others_Wardrobe.Others_Suit" />
+        <activity android:name=".Others_Wardrobe.Others_Coat" />
+        <activity android:name=".Others_Wardrobe.Others_Cap" />
+        <activity android:name=".Others_Wardrobe.My_Suit" />
+        <activity android:name=".Main_Fragment.MyselfCollect" />
+        <activity android:name=".Main_Fragment.MyselfCollectSearch" />
+        <activity android:name=".Main_Fragment.HeartLayoutActivity" />
+        <activity android:name=".Mix_Manage.Mix_Search" />
+        <activity android:name=".Mix_Manage.Mix_Check" />
+        <activity android:name=".Mix_Manage.Mix_Fix" />
+        <activity android:name=".Main_Fragment.HeartFix" />
+        <activity android:name=".Mix_Manage.Mix_Delete"></activity>
+    </application>
+
+</manifest>

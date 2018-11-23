@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--搜索栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#6eaff1"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/clothe_search_return"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:background="@drawable/left_arrows_white" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/clothe_search_Ed"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/clothe_search_return"
+            android:layout_weight="6"
+            android:background="#fff"
+            android:hint="请输入搜索内容"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.3"></LinearLayout>
+
+        <Button
+            android:id="@+id/clothe_search_IMG_Bt"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.8"
+            android:background="@drawable/search" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"></LinearLayout>
+
+    </LinearLayout>
+    <!---->
+    <FrameLayout
+        android:id="@+id/FrameLayout_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
